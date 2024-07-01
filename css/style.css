@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: black;
+}
+
+@font-face {
+    font-family: 'Ask Why';
+    src: url('fonts/Ask-Why.eot');
+    src: url('fonts/Ask-Why.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Ask-Why.woff2') format('woff2'),
+         url('fonts/Ask-Why.woff') format('woff'),
+         url('fonts/Ask-Why.ttf')  format('truetype'),
+         url('fonts/Ask-Why.svg#Ask Why') format('svg');
+}
+
+@font-face {
+    font-family: 'Storm Gust';
+    src: url('fonts/Storm-Gust.eot');
+    src: url('fonts/Storm-Gust.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Storm-Gust.woff2') format('woff2'),
+         url('fonts/Storm-Gust.woff') format('woff'),
+         url('fonts/Storm-Gust.ttf')  format('truetype'),
+         url('fonts/Storm-Gust.svg#Storm Gust') format('svg');
+}
+
+body nav {
+    background-color: #f0b113;
+    justify-content: center;
+    padding: 8px 8px 8px 8px;
+    border: 2px solid black;
+    
+    
+  
+}
+
+body nav .navbar {
+    color: white;
+    display: flex;
+    justify-content: center;
+    max-width: 1218px;
+    margin: auto;
+  
+}
+
+body nav .navbar .socials a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body nav .navbar .socials a i.fa-brands,
+body nav .navbar .socials a i.fas {
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+body nav .navbar .socials a i.fas {
+    margin-left: 8px;
+} 
+
+
+body nav .navbar .socials a i.fa-brands:hover,
+body nav .navbar .socials a i.fas:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+body nav .navbar .socials a #coingecko {
+    margin-bottom: -5px;
+}
+
+body nav .navbar .socials a:nth-child(1) {
+    margin-right: 8px;
+}
+
+body nav .navbar .socials a:nth-child(2) {
+    margin-right: 3px;
+}
+
+body nav .navbar .socials a:nth-child(3) {
+    margin-right: 6px;
+}
+
+body nav .navbar .socials a:nth-child(4) {
+    margin-right: 6px;
+}
+
+body nav .navbar .socials a:nth-child(5) {
+    margin-right: 6px;
+}
+
+body nav .navbar .socials a:nth-child(6) {
+    margin-right: 6px;
+}
+
+body nav .navbar img {
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+body nav .navbar img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 831px) {
+    body nav {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    body nav .navbar .socials a i.fa-brands,
+    body nav .navbar .socials a i.fas {
+        font-size: 35px;
+    }
+    body nav .navbar img {
+        width: 35px;
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    body nav {
+        padding-right: 0.8em;
+        padding-left: 0.8em;
+    }
+    body nav .navbar .socials a i.fa-brands,
+    body nav .navbar .socials a i.fas {
+        font-size: 30px;
+    }
+    body nav .navbar img {
+        width: 30px;
+    }
+    body nav .navbar .socials a img {
+        width: 32px;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    body nav {
+        padding-right: 0.8em;
+        padding-left: 0.8em;
+    }
+    body nav .navbar .socials a i.fa-brands,
+    body nav .navbar .socials a i.fas {
+        font-size: 25px;
+    }
+    body nav .navbar img {
+        width: 25px;
+    }
+    body nav .navbar .socials a img {
+        width: 28px;
+    }
+}
+
+body .hero {
+    background-image: url("/media/images/bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+body .hero .title {
+
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: -1em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+body .hero .title h1 {
+    font-size: 4em;
+
+    font-weight: normal;
+}
+title {
+    width: 1850px;
+}
+
+body .hero .title h2 {
+     
+    font-weight: normal;
+}
+
+body .hero .title img {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+body .hero button {
+    background: #f0b113;
+    color: white;
+    font-size: 2.3em;
+    padding: 0.3em 0.6em;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: "Ask Why";
+}
+
+body .hero button a {
+    color: transparent;
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+}
+
+body .hero button:hover {
+    background: black;
+    transition: 0.3s ease-in-out;
+}
+
+body .hero #logoContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 1em;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    transform: translateY(-20px);
+}
+
+body .hero #logoContainer i.fa-solid {
+    font-size: 2em;
+}
+
+body .hero #logoContainer a {
+    text-decoration: none;
+}
+
+body .hero #logoContainer a img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+body .hero #logoContainer a img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+body .hero img {
+    max-width: 647px;
+}
+
+@media only screen and (max-width: 531px) {
+    body .hero img {
+        width: 100vw;
+    }
+}
+
+body .hero .slider {
+    height: 50px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    
+    font-size:28px;
+    font-family: "Storm Gust";
+    
+}
+
+body .hero .slider .slide-track {
+    display: flex;
+    width: 11200px;
+    animation: scroll 60s linear infinite;
+}
+
+body .hero .slider .slide-track .slide {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    color: #f0b113;
+}
+
+body .hero .slider::before,
+body .hero .slider::after {
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 5%;
+    z-index: 2;
+}
+
+body .hero .slider::before {
+    left: 0;
+    top: 0;
+}
+
+body .hero .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-11200px);
+    }
+}
+
+body .howToBuy {
+    background: #ffbc0c;
+    padding: 3em 2em 3em 2em;
+    text-align: center;
+}
+
+body .howToBuy iframe {
+    max-width: 561px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+
+
+
+body .tokenomics {
+    background: #ffbc0c;
+    padding: 3em 2em 0 2em;
+    text-align: center;
+    font-family: 'Ask Why';
+}
+
+body .tokenomics h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+body .tokenomics img {
+    max-width: 500px;
+    width: 80%;
+    margin-bottom: -6px;
+}
+
+body .tokenomics ul {
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+body .tokenomics ul li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 417px) {
+    body .tokenomics h1 {
+        font-size: 2em;
+    }
+    body .tokenomics ul {
+        font-size: 1em;
+    }
+}
+
+body .faq {
+    transition: 0.3s ease;
+}
+
+body .faq h2 {
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+body .faq .container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 100%;
+    max-width: 48rem;
+}
+
+body .faq .container .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+body .faq .container .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+}
+
+body .faq .container .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+body .faq .container .accordion button:hover,
+body .faq .container .accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+
+body .faq .container .accordion button:hover::after,
+body .faq .container .accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+body .faq .container .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+body .faq .container .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+body .faq .container .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+body .faq .container .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+body .faq .container .accordion button[aria-expanded=true] {
+    color: #03b5d2;
+}
+
+body .faq .container .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+body .faq .container .accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 100em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+body .faq .container .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+body .faq .container .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+    color: white;
+}
+
+body .faq .container .accordion .accordion-content p a {
+    text-decoration: none;
+    color: rgb(195, 114, 92);
+}
+
+/*# sourceMappingURL=style.css.map */
